@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  YCTheme
+//
+//  Created by Air on 2019/8/21.
+//  Copyright © 2019 YC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ThemeHeader.h"
+
+#define IPHONEX ([UIScreen mainScreen].bounds.size.height >= 812)
+#define ScreenWith [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define NaviBarAndStatusBarHeight (IPHONEX ? 88 : 64)
+#define TabbarHeight (IPHONEX ? 83 : 49)
+#define SaveAreaHeight (ScreenHeight - NaviBarAndStatusBarHeight - TabbarHeight)
+
+#endif /* PrefixHeader_pch */
